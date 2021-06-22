@@ -1,0 +1,217 @@
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+.el-table--mini, .el-table--small, .el-table__expand-icon{
+  font-size:14px;
+}
+
+.el-table .cell .el-button--text{
+  padding:0;
+}
+.el-table th {
+    color: #ffffff;
+    background: #52A2E8 !important;
+}
+
+.el-button--primary {
+    color: #ffffff;
+    background-color: #52A2E8;
+}
+.el-button--mini, .el-button--small{
+  font-size:14px;
+}
+.el-button--text:hover {
+    color: #5bb3d7 !important;
+    /*border-color:#ffffff;*/
+}
+
+.el-button--text {
+    color: #5bb3d7 !important;
+}
+
+.el-menu-item.is-active {
+    /* color: #5bb3d7 !important; */
+}
+
+.flex {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.flex_ver {
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* 垂直居中 */
+.flex_hor {
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+/* 水平居中 */
+.flex_jus {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+/*  两端对齐*/
+.
+.margin-top-8 {
+    margin-top: 8px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-100 {
+    margin-bottom: 80px;
+}
+
+.margin-right-10 {
+    margin-right: 10px;
+}
+
+.padding-left-6 {
+    padding-left: 6px;
+}
+
+.padding-left-8 {
+    padding-left: 5px;
+}
+
+.padding-left-10 {
+    padding-left: 10px;
+}
+
+.padding-left-20 {
+    padding-left: 20px;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.height-120px {
+    height: 100px;
+}
+
+.height-200px {
+    height: 200px;
+}
+
+.height-492px {
+    height: 492px;
+}
+
+.height-460px {
+    height: 460px;
+}
+
+.line-gray {
+    height: 0;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.notwrap {
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.padding-left-5 {
+    padding-left: 10px;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+textarea {
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+.formDiv, .formDiv1{
+    margin: auto;
+    width: 80%;
+}
+.formDiv .el-form-item__label{
+    color:white !important
+}
+
+.formDiv .el-select{
+    display: block;
+}
+
+
+.tablePageSearchArea{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;
+}
+.tablePageSearchArea .el-form{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+}
+.tablePageSearchArea .el-form-item__label{
+    color: white;
+}
+
+.tablePageSearchArea .el-form-item{
+    margin: 0 10px 0 0;
+}
+.tablePageSearchArea .el-range-input{
+    background: transparent;
+    color: white;
+}
+.tablePageSearchArea .el-range-separator{
+    color: white;
+}
+.tablePageSearchArea .el-input__inner{
+    color: white;
+}
