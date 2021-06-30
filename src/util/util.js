@@ -83,7 +83,7 @@ util.formatRoutes = function (routes, parentFullTitle) {
                             homeChildren.push({
                                 name: element.name,
                                 title: element.title,
-                                meta: { title: "系统综合集成平台" },
+                                meta: { title: "影响驾驶能力药物查询系统" },
                                 path: element.path,
                                 component: function (resolve) {
                                     require(['@/views/' + element.component + '.vue'], resolve)
@@ -94,14 +94,15 @@ util.formatRoutes = function (routes, parentFullTitle) {
                     }
                 });
             }
+            console.log(router.children)
             rouFun(router.children)
         }
     })
 
     homeFmt = {
         name: 'home',
-        title: '后台管理系统',
-        meta: { title: "后台管理系统" },
+        title: '影响驾驶能力药物查询系统',
+        meta: { title: "影响驾驶能力药物查询系统" },
         path: '/Home',
         component: function (resolve) {
             require(['@/views/' + 'Home' + '.vue'], resolve)

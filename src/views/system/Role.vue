@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="padding: 10px 10px 20px 10px">
     <el-row type="flex" justify="space-between">
       <el-col>
         <el-row type="flex" justify="start">
@@ -7,21 +7,18 @@
             <el-form-item label="名称">
               <el-input
                 v-model="queryForm.name"
-                size="mini"
                 placeholder="名称"
               ></el-input>
             </el-form-item>
             <el-form-item label="编码">
               <el-input
                 v-model="queryForm.code"
-                size="mini"
                 placeholder="编码"
               ></el-input>
             </el-form-item>
             <el-form-item label="类型">
               <el-select
                 value-key="num"
-                size="mini"
                 v-model="queryForm.type"
                 placeholder="类型"
               >
@@ -38,30 +35,27 @@
               <el-button
                 type="primary"
                 icon="el-icon-search"
-                size="mini"
                 @click="getList"
                 >查询</el-button
               >
               <el-button
                 type="primary"
                 icon="el-icon-refresh"
-                size="mini"
                 @click="queryFormReset"
                 >重置</el-button
               >
             </el-form-item>
-          </el-form>
-        </el-row>
-      </el-col>
-    </el-row>
-    <el-row type="flex" justify="end" style="margin-bottom: 5px">
-      <el-button
+              <el-form-item>
+                  <el-button
         type="primary"
-        size="mini"
         icon="el-icon-plus"
         @click="addClick"
         >新增</el-button
       >
+              </el-form-item>
+          </el-form>
+        </el-row>
+      </el-col>
     </el-row>
     <el-table
       row-key="id"
@@ -485,4 +479,7 @@ export default {
 >>> .el-select {
   width: 100%;
 }
+    >>> .el-row{
+        padding:0;
+    }
 </style>

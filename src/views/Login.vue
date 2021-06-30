@@ -139,14 +139,14 @@ export default {
       this.$refs.loginForm.resetFields();
     },
     handleSubmit(ev) {
-      // this.$refs.loginForm.validate((valid) => {
-      //   if (valid) {
-      //     this.getKey(this.login);
-      //   }
-      // });
-        this.$router.push({
-            path:"/system"
-        })
+      this.$refs.loginForm.validate((valid) => {
+        if (valid) {
+          this.getKey(this.login);
+        }
+      });
+      //   this.$router.push({
+      //       path:"/system"
+      //   })
     },
     login(RSAKey, randomKey) {
       let loading = this.$loading({ fullscreen: true });
@@ -235,7 +235,7 @@ export default {
 .background {
   width: 100%;
   height: 100%;
-  /*background-image: url('../assets/login_bg.jpg');*/
+  background: url('../../static/img/bg.jpg') no-repeat center center/100% 100%;
   position: absolute;
     display:flex;
     align-items: center;

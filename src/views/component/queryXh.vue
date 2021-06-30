@@ -4,10 +4,10 @@
             <el-col :span="24" style="padding-bottom:30px;">
                 <div class="title">药物相互作用影响驾驶能力查询</div>
             </el-col>
-            <el-col :span="24" style="padding-bottom:30px;">
+            <el-col :span="24" style="padding-bottom:30px;" class="queryXh">
                 <el-form :inline="true" :model="formInline" class="demo-form-inline">
-                    <el-form-item style="width:40%;">
-                        <el-input v-model="formInline.query" placeholder="药物相互作用影响驾驶能力查询（请输入两种或以上药物）"></el-input>
+                    <el-form-item style="width: 40%;">
+                        <el-input style="width: 100%" v-model="formInline.query" placeholder="药物相互作用影响驾驶能力查询（请输入两种或以上药物）"></el-input>
                     </el-form-item>
                     <el-form-item>
                         <el-button type="primary" @click="query">查询</el-button>
@@ -67,6 +67,9 @@
                         </el-row>
                     </div>
                 </el-card>
+                <el-card class="box-card" v-if="list.length == 0">
+                    <div>无反应数据</div>
+                </el-card>
             </el-col>
         </el-row>
     </div>
@@ -99,4 +102,8 @@
         }
     }
 </script>
-<style scoped></style>
+<style scoped>
+    >>> .queryXh .el-form-item__content{
+        width: 100%;
+    }
+</style>

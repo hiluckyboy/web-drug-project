@@ -1,13 +1,13 @@
 <template>
-    <div class="main">
+    <div>
         <el-row>
             <el-col :span="24" style="padding-bottom:30px;">
                 <div class="title">影响驾驶能力药物查询</div>
             </el-col>
-            <el-col :span="24" style="padding-bottom:10px;">
+            <el-col :span="24" style="padding-bottom:10px;" class="querydrug">
                 <el-form :inline="true" :model="formInline" class="demo-form-inline">
-                    <el-form-item style="width:40%;">
-                        <el-input v-model="formInline.name" placeholder="商品名、药品名或拼音首字母"></el-input>
+                    <el-form-item style="width: 40%;">
+                        <el-input style="width: 100%" v-model="formInline.name" placeholder="商品名、药品名或拼音首字母"></el-input>
                     </el-form-item>
                     <el-form-item>
                         <el-button type="primary" @click="queryYW">查询</el-button>
@@ -203,5 +203,7 @@
     }
 </script>
 <style scoped>
-
+>>> .querydrug .el-form-item__content{
+    width: 100%;
+}
 </style>
