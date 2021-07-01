@@ -1,9 +1,12 @@
 export const path = {
     drug: {
+    /*-------- 药物查询 ---------*/
         // 影响驾驶能力药物及不良反应
         queryListXH: "/platform-api/Platform/services/yxjsyaowu/queryList",
         // 药物相互作用影响驾驶能力查询
         queryListYW: "/platform-api/Platform/services/yaowuxhzy/queryList",
+    /*-------- 药物查询 end ---------*/
+    /*-------- 药物维护 ---------*/
         // 影响驾驶能力药物分页
         yxjsyaowu:"/platform-api/Platform/services/yxjsyaowu/pageYaowu",
         add:"/platform-api/Platform/services/yxjsyaowu/add",
@@ -13,6 +16,15 @@ export const path = {
         queryListFy: "/platform-api/Platform/services/buLiangFy/queryList",
         // 影响驾驶能力药物分类查询
         queryListYw: "/platform-api/Platform/services/yaowuFl/queryList",
+        downYaowuExcel:"/platform-api/Platform/services/yxjsyaowu/downYaowuExcel",
+        modifyPassword: "/platform-api/user/modifyPassword",
+    /*-------- 药物维护 end ---------*/
+
+    /*-------- 药物相互作用 ---------*/
+        pageXianghuzy:"/platform-api/Platform/services/yaowuxhzy/pageXianghuzy",
+        addXianghuzy:"/platform-api/Platform/services/yaowuxhzy/add",
+        updateXianghuzy:"/platform-api/Platform/services/yaowuxhzy/update",
+    /*-------- 药物相互作用 end ---------*/
     },
     group: {
         list: '/platform-api/Platform/services/troopsOrg/list',

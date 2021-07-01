@@ -65,7 +65,7 @@ Vue.config.productionTip = false;
 
 NProgress.configure({ showSpinner: false });
 const whiteList = [];
-/*
+
 router.beforeEach((to, from, next) => {
     NProgress.start();
     if (to.meta.title) {
@@ -140,10 +140,10 @@ router.beforeEach((to, from, next) => {
         next();
     }
 });
-*/
-// router.afterEach(transition => {
-//     NProgress.done();
-// });
+
+ router.afterEach(transition => {
+     NProgress.done();
+ });
 
 new Vue({
     el: '#app',

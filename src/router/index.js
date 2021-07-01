@@ -5,28 +5,28 @@ import Home from '@/views/Home';
 import System from '@/views/system';
 import Error404 from '@/views/404.vue';
 
-const query = () => import('../views/component/queryDrug.vue');
-const uphold = () => import('../views/component/uphold.vue');
-const queryXh = () => import('../views/component/queryXh.vue');
+// const query = () => import('../views/component/queryDrug.vue');
+// const uphold = () => import('../views/component/uphold.vue');
+// const queryXh = () => import('../views/component/queryXh.vue');
 
 Vue.use(Router);
 const routes = [
     {
-        path: '/',
+        path: '/login',
         name: 'login',
         hidden: true,
         component: Login
     },
     {
-        path: '/home',
+        path: '/',
         name: 'home',
         hidden: true,
         meta:{
-            title:"业务系统"
+            title:"影响驾驶能力药物查询系统"
         },
         component: Home
     },
-    {
+    /*{
         path: '/system',
         name: 'system',
         hidden: true,
@@ -62,7 +62,7 @@ const routes = [
             title: '404-页面不存在'
         },
         component: Error404
-    },
+    },*/
 ];
 
 

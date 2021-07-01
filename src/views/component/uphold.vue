@@ -356,7 +356,7 @@
                             res.buliangfyfl = that.setFy(res.buliangfyfl);
                             res.yaowufl = that.setYw(res.yaowufl);
                         });
-                        that.list.thetotal = data.pages;
+                        that.list.thetotal = data.total;
                         that.showTable = false;
                         that.$nextTick(()=>{
                             that.showTable = true;
